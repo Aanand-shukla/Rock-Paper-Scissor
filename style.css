@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(123, 6, 233);
+    color: #fff;
+}
+
+body img {
+    height: 53px;
+    width: 100px;
+
+}
+
+.main {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+body h1 {
+    text-align: center;
+
+}
+
+.selectImages img {
+    rotate: -90deg;
+    margin: 1.2rem 0rem 1.8rem;
+}
+
+.match {
+    display: flex;
+    justify-content: center;
+    margin: 1.2rem 0;
+}
+
+.cpuMatch img {
+    rotate: 180deg;
+}
+
+.result {
+    margin: 1.8rem 0rem;
+}
+
+
+.gamebox {
+    max-width: 500px;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 20px;
+    padding: 25px 35px;
+}
+
+.rock,
+.paper,
+.scissor {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+:where(.rock,
+    .paper,
+    .scissor) b {
+    margin-left: 1rem;
+}
+
+.selectImages {
+    display: flex;
+}
+
+.rock,
+.paper,
+.scissor {
+    opacity: 0.6;
+
+}
+
+.rock:hover,
+.paper:hover,
+.scissor:hover {
+    /* opacity: 1; */
+    cursor: pointer;
+}
+
+.rock.active,
+.paper.active,
+.scissor.active {
+    opacity: 1;
+}
